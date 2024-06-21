@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Examen de Diagnóstico</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi página web</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Mi nombre es [Tu nombre]. Me gusta [tu interés principal].</p>
-        </section>
-        <section>
-            <h2>Proyectos</h2>
-            <ul>
-                <li><a href="#">Proyecto 1</a></li>
-                <li><a href="#">Proyecto 2</a></li>
-                <li><a href="#">Proyecto 3</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mi Compañía. Todos los derechos reservados.</p>
-    </footer>
+    <div class="container">
+        <div class="header">
+            <h1><span>EXAMEN DE</span> <span class="diagnostico">DIAGNÓSTICO</span></h1>
+            <p>Realiza un diagnóstico y conoce a qué ciclo debes entrar.</p>
+        </div>
+        <div class="form-container">
+            <form>
+                <h2>Completa tus datos correctamente</h2>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Whatsapp" required>
+                <input type="text" placeholder="Área" required>
+                <input type="text" placeholder="Examen" required>
+                <button type="submit">
+                    Enviar mi mensaje
+                    <img src="send-icon.png" alt="Enviar">
+                </button>
+            </form>
+        </div>
+        <div class="illustration">
+            <img src="https://i.imgur.com/xQmOT0k.png" alt="Brain Illustration">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
