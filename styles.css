@@ -19,7 +19,8 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 90%; /* Ajustado para que sea responsivo */
+  max-width: 600px;
 }
 
 h2 {
@@ -28,7 +29,19 @@ h2 {
 }
 
 .form-group {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no haya suficiente espacio */
   margin-bottom: 15px;
+}
+
+.input-group {
+  flex: 1 1 45%; /* Permite que los elementos ocupen el 45% del espacio y puedan ajustarse */
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.input-group:last-child {
+  margin-right: 0;
 }
 
 label {
@@ -70,4 +83,11 @@ button:hover {
 button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    flex: 1 1 100%; /* Cambia a ocupar el 100% del ancho cuando el ancho de la pantalla es menor o igual a 600px */
+    margin-right: 0;
+  }
 }
