@@ -1,45 +1,79 @@
-/* styles.css */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilos para enlaces */
-a {
+.header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
     color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-a:hover {
+.header h1 span.diagnostico {
+    color: #00b894;
+}
+
+.header p {
+    font-size: 18px;
     color: #555;
+}
+
+.form-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b894;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button img {
+    margin-left: 10px;
+}
+
+.illustration img {
+    max-width: 300px;
+    height: auto;
+    margin-left: 20px;
 }
